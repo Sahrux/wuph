@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h2, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .container{
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    gap:1.5rem;
+    background:#eee;
+}
+
+.container .posts-container .post{
+    width:100%;
+    padding:2rem;
+    background:#fff;
+    border:var(--border);
+    border-radius: .5rem;
+    margin-bottom: 1.5rem;
+}
+
+.container .posts-container .post .image{
+    height: 40rem;
+    width:100%;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+
+.container .posts-container .post .date{
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    color:var(--orange);
+}
+
+.container .posts-container .post .title{
+    padding-top: 1.5rem;
+    font-size: 2.5rem;
+    color:var(--black);
+}
+
+.container .posts-container .post .text{
+    color:var(--light-color);
+    font-size: 1.6rem;
+    line-height: 1.7;
+    padding:1rem 0;
+}
+
+.container .posts-container .links{
+    border-top: var(--border);
+    margin-top: .5rem;
+    padding-top: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.container .posts-container .links .user{
+    margin-right: auto;
+}
+
+.container .posts-container .links .icon{
+    padding-right: 1rem;
+}
+
+.container .posts-container .links a{
+    font-size: 1.5rem;
+    color:var(--light-color);
+}
+
+.container .posts-container .links a i{
+    padding-right: .2rem;
+    color:var(--black);
+}
+
+.container .posts-container .links a:hover{
+    color:var(--orange);
+}
+
+.container .posts-container .links a:hover i{
+    color:var(--orange);
+}
+
+.container .sidebar .box{
+    border:var(--border);
+    border-radius: .5rem;
+    overflow:hidden;
+    background:#fff;
+    margin-bottom: 1.5rem;
+}
+
+.container .sidebar .box .title{
+    padding:1.5rem;
+    font-size: 2rem;
+    color:#fff;
+    background:var(--black);
+    text-transform: capitalize;
+}
+
+.container .sidebar .box .about{
+    text-align: center;
+    padding:1rem 1.5rem;
+}
+
+.container .sidebar .box .about img{
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin:1rem 0;
+}
+
+.container .sidebar .box .about h3{
+    color:var(--orange);
+    font-size: 2rem;
+}
+
+.container .sidebar .box .about p{
+    color:var(--light-color);
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding:1rem;
+}
+
+.container .sidebar .box .about .follow{
+    padding:1rem 0;
+}
+
+.container .sidebar .box .about .follow a{
+    height: 4rem;
+    line-height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background:var(--black);
+    color:#fff;
+    font-size: 1.7rem;
+    margin:0 .1rem;
+}
+
+.container .sidebar .box .about .follow a:hover{
+    background:var(--orange);
+}
+
+.container .sidebar .box .category{
+    padding:1rem 1.5rem;
+}
+    </style>
+   <section class="container" id="posts">
+
+    <div class="posts-container">
+
+        <div class="post">
+            <img src="img/xbr2.jpg" alt="" class="image">
+            <div class="date">
+                <i class="far fa-clock"></i>
+                <span>2 may, 2022</span>
+            </div>
+            <h3 class="title">TƏBİƏT HAQQINDA</h3>
+            <p class="text">Təbiət insanları meydana gətirdi, onları özünə itaət etdirdi də. Ancaq insanların dünyada yaşaya bilmələri üçün, onların təbiətə hakimiyyətini də şərtləndirdi. Təbiətə hakim ola bilməyənlər, varlıqlarını qoruya bilməmişlər. Təbiət onları, öz ünsürləri içində əzməkdən, boğmaqdan, yox etməkdən və etdirməkdən çəkinməmişdir. Təbiətdə hər hansı bir şey bizə gülünc və mənasız gələrsə, bunun səbəbi əşya haqqında məhdud məlumat sahibi olmamızdır, təbiətin bir bütün olaraq nizamı və uyğunluğunu bilmədiyimizdəndir.</p>
+           
+            <div class="links">
+                <a href="#" class="user">
+                    <i class="far fa-user"></i>
+                    <span> admin</span>
+                </a>
+                <a href="#" class="icon">
+                    <i class="far fa-comment"></i>
+                    <span>(1)</span>
+                </a>
+                <a href="#" class="icon">
+                    <i class="far fa-share-square"></i>
+                    <span>(1)</span>
+                    
+                </a>
+            </div>
+        </div>
+
+</body>
+</html>
